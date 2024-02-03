@@ -1,0 +1,30 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+<div class="bg-cyan-800">
+<h1 class="p-7 text-white text-4xl uppercase text-bold border-b-4 border-cyan-950">Dashboard</h1>
+
+    <a href="{% url 'create_garment_schedule_payment' %}" class="bg-info text-black py-3 px-5 m-3 rounded-lg">Create Services</a>
+    <a href="#" class="bg-info text-black py-3 px-5 m-3 rounded-lg">Manage Schedules</a>
+</div>
+<div class="bg-cyan-800">
+    <h1 class="p-5 text-white text-xl">Record of Repairs</h1>
+</div>
+{% for garment in garments %}
+    <div class="flex bg-cyan-950 space-x-4 pl-5 py-5 ">
+        <h2>{{ garment.name }}</h2>
+        <p>Description: {{ garment.description }}</p>
+        <p>Type: {{ garment.type }}</p>
+        <p>Quantity: {{ garment.quantity }}</p>
+        <p>Date: {{ garment.schedule.date }}</p>
+        <p>Time: {{ garment.schedule.time }}</p>
+        <p>Amount: {{ garment.payment.amount }}</p>
+        <p>Status: {{ garment.payment.get_status_display }}</p>
+        <p>Mode of Payment: {{ garment.payment.get_mode_of_payment_display }}</p>
+        <a href="{% url 'display_garment' garment.id %}" class="p-2 hover:text-cyan-600 text-info hover:text-xl uppercase">View Details</a>
+        <a href="{% url 'update_garment_schedule_payment' garment.id %}" class="p-2 hover:text-cyan-600 text-warning hover:text-xl uppercase">Edit</a>
+        <a href="{% url 'delete_garment' garment.id %}" class="p-2 hover:text-cyan-600 text-danger hover:text-xl uppercase">Delete</a>
+    </div>
+{% endfor %}
+
+{% endblock %}

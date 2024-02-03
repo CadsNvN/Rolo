@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ROLO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Favicon link  -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static '/images/favicon.png'%}">
+    <!--  CSS link  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!--  Flaticon link  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!-- CDN for tailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- CDN for AOS Transitions -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
+    <!--  CDN for TW elements  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+
+    <!-- END link  -->
+</head>
+<body>
+<script>
+         AOS.init();
+    </script>
+ {% include 'pages/navbar.html' %}
+
+<!--<h1 style="text-align: center">homepage Section of ROLO</h1>-->
+
+    {%block content%}
+        {#home#}
+    {%endblock%}
+
+<hr>
+<!--<h1 style="text-align: center">footer Section of ROLO </h1>-->
+    {% include 'pages/footer.html' %}
+
+<!-- JavaScript link -->
+ <script src="{% static 'js/script.js' %}"></script>
+ <script src="{% static 'js/script1.js' %}"></script>
+<!-- tw-elements-js  -->
+ <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+<!-- aos-transitions-js  -->
+
+
+</body>
+</html>

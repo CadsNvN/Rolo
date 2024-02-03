@@ -1,0 +1,27 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+<div class="bg-cyan-950">
+    <h1 class="pt-14 pl-10 text-white text-4xl uppercase text-bold border-b-4 border-cyan-950">User Booked Information</h1>
+
+    <div class="ml-32 py-10 text-lg">
+    <h2>Name: {{ garment.name }}</h2>
+    <p>Description: {{ garment.description }}</p>
+    <p>Type: {{ garment.type }}</p>
+    <p>Quantity: {{ garment.quantity }}</p>
+    <p>Scheduled Date: {{ garment.schedule.date }}</p>
+    <p>Scheduled Time: {{ garment.schedule.time }}</p>
+    <p>Services Created: {{ garment.schedule.date_created }}</p>
+    <p>Amount: {{ garment.payment.amount }}</p>
+    <p>Status: {{ garment.payment.get_status_display }}</p>
+    <p>Mode of Payment: {{ garment.payment.get_mode_of_payment_display }}</p>
+    <a href="{% url 'update_garment_schedule_payment' garment.id %}" class="p-2 hover:text-cyan-600 text-warning hover:text-xl uppercase">Edit</a>
+    <a href="{% url 'delete_garment' garment.id %}" class="p-2 hover:text-cyan-600 text-danger hover:text-xl  uppercase">Delete</a>
+    <a href="{% url 'dashboard' %}" class="p-2 hover:text-cyan-600 text-info hover:text-xl  uppercase">Dashboard</a>
+</div>
+
+</div>
+
+
+
+{% endblock %}

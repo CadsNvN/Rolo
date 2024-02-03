@@ -1,0 +1,424 @@
+{% extends 'pages/index.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Jumbotron -->
+  <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
+        background-position: 50%;
+        background-image: url('{% static 'images/hero1.jpg' %}');
+        height: 500px;
+      ">
+    <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.50)] bg-fixed">
+      <div class="flex h-full items-center justify-center">
+        <div class="px-6 text-center text-white md:px-12 mt-24">
+          <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+            Rolo Tailoring Shop <br/><span class="text-4xl font-normal"> Try our services now!</span>
+          </h1>
+         <a href="{% url 'create_garment_schedule_payment' %}">
+          <button type="button" class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px]
+          text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out
+          hover:border-neutral-100 hover:bg-primary hover:bg-opacity-70 hover:text-neutral-100 focus:border-neutral-100
+          focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+          data-te-ripple-init data-te-ripple-color="light"
+          >Get Started</button>
+         </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- for Our Service-->
+<!-- component -->
+<div id="services" class="section relative pt-14 pb-8 md:pt-14 md:pb-0 bg-slate-300">
+    <div class="container xl:max-w-6xl mx-auto px-4">
+        <!-- Heading start -->
+        <header class="text-center mx-auto mb-12 lg:px-20">
+            <h2 class="text-2xl leading-normal font-bold text-black">Explore Our Services</h2>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 60" style="margin: 0 auto;height: 35px;" xml:space="preserve">
+                <circle cx="50.1" cy="30.4" r="5" class="stroke-primary" style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"></circle>
+                <line x1="55.1" y1="30.4" x2="100" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+                <line x1="45.1" y1="30.4" x2="0" y2="30.4" class="stroke-primary" style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+            </svg>
+            <p class="text-neutral-700 leading-relaxed font-normal text-xl mx-auto pb-2">This is the overview of our services & other things .</p>
+        </header>
+        <!-- End heading -->
+        <!-- row -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-wrap flex-row -mx-4 text-center">
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Our Services</h3>
+                    <p class="text-gray-500">Searching for quality repair in your precious cloth try service we offer quality over quantity services.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
+                            <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Your Response</h3>
+                    <p class="text-gray-500">We prioritize your feedback and instructions when taking our services, so you will fell satisfied .</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349m-16.5 11.65V9.35m0 0a3.001 3.001 0 003.75-.615A2.993 2.993 0 009.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 002.25 1.016c.896 0 1.7-.393 2.25-1.016a3.001 3.001 0 003.75.614m-16.5 0a3.004 3.004 0 01-.621-4.72L4.318 3.44A1.5 1.5 0 015.378 3h13.243a1.5 1.5 0 011.06.44l1.19 1.189a3 3 0 01-.621 4.72m-13.5 8.65h3.75a.75.75 0 00.75-.75V13.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.75c0 .415.336.75.75.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Our Identity</h3>
+                    <p class="text-gray-500">This is a wider card with supporting text below as a natural content.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+                            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Scheduling</h3>
+                    <p class="text-gray-500">This is a wider card with supporting text below as a natural content.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Repair Prices</h3>
+                    <p class="text-gray-500">This is a wider card with supporting text below as a natural content.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+            <div class="flex-shrink px-4 max-w-full w-full sm:w-1/2 lg:w-1/3 lg:px-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <!-- service block -->
+                <div class="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+                    <div class="inline-block text-gray-900 mb-4">
+                        <!-- icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="currentColor" class="bi bi-funnel" viewBox="0 0 16 16">
+                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg leading-normal mb-2 font-semibold text-black">Optimize Booking</h3>
+                    <p class="text-gray-500">This is a wider card with supporting text below as a natural content.</p>
+                </div>
+                <!-- end service block -->
+            </div>
+        </div>
+        <!-- end row -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center pb-10">
+            <button
+              type="button"
+              data-te-ripple-init
+              data-te-ripple-color="light"
+              class="inline-block rounded bg-cyan-950 px-10 py-5 text-lg font-medium uppercase leading-normal text-white
+              shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600
+              hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600
+              focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none
+              focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]
+              dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)]
+              dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+              dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]
+              dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+              Booked Now!
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- for latest article-->
+<!-- Container for demo purpose -->
+<div class="container mt-24 mx-auto md:px-6">
+  <!-- Section: Design Block -->
+  <section class="mb-14 mx-20">
+    <h2 class="mb-16 text-center text-3xl font-bold text-neutral-800">Latest articles</h2>
+<!-- pic1 latest-->
+    <div data-aos="fade-up" data-aos-duration="1000" class="mb-16 flex flex-wrap">
+      <div class="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6">
+        <div
+          class="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+          data-te-ripple-init data-te-ripple-color="light">
+          <img src="{% static 'images/measure.jpg'%}" class="w-full" alt="HomeLatest1" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+        <h3 class="mb-4 text-2xl font-bold text-neutral-800">Increase price /w quality</h3>
+        <div class="mb-4 flex items-center text-sm font-medium text-danger dark:text-danger-500">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" class="mr-2 h-5 w-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+          </svg>
+          Business
+        </div>
+        <p class="mb-6 text-sm text-neutral-500 dark:text-neutral-400">
+          Published <u>14.01.2022</u> by
+          <a href="#!">Lisa McCartney</a>
+        </p>
+        <p class="mb-6 text-neutral-500 dark:text-neutral-300">
+          Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat
+          vulputate. Ut vulputate est non quam dignissim elementum. Donec a
+          ullamcorper diam.
+        </p>
+        <p class="text-neutral-500 dark:text-neutral-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae
+          nulla saepe rerum aspernatur odio amet perferendis tempora
+          mollitia? Ratione unde magni omnis quaerat blanditiis cumque
+          dolore placeat rem dignissimos?
+        </p>
+      </div>
+    </div>
+<!-- pic2 latest -->
+    <div data-aos="fade-up" data-aos-duration="1000" class="mb-16 flex flex-wrap lg:flex-row-reverse">
+      <div class="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pl-6">
+        <div
+          class="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+          data-te-ripple-init data-te-ripple-color="light">
+          <img src="{% static 'images/tread.jpg'%}" class="w-full" alt="HomeLatest2" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pr-6">
+        <h3 class="mb-4 text-2xl font-bold text-neutral-800">Quality Threads for you</h3>
+        <div class="mb-4 flex items-center text-sm font-medium text-primary dark:text-primary-400">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" class="mr-2 h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
+          </svg>
+          Fine Materials
+        </div>
+        <p class="mb-6 text-sm text-neutral-500 dark:text-neutral-400">
+          Published <u>12.01.2022</u> by
+          <a href="#!">Anna Doe</a>
+        </p>
+        <p class="text-neutral-500 dark:text-neutral-300">
+          Duis sagittis, turpis in ullamcorper venenatis, ligula nibh porta
+          dui, sit amet rutrum enim massa in ante. Curabitur in justo at
+          lorem laoreet ultricies. Nunc ligula felis, sagittis eget nisi
+          vitae, sodales vestibulum purus. Vestibulum nibh ipsum, rhoncus
+          vel sagittis nec, placerat vel justo. Duis faucibus sapien eget
+          tortor finibus, a eleifend lectus dictum. Cras tempor convallis
+          magna id rhoncus. Suspendisse potenti. Nam mattis faucibus
+          imperdiet. Proin tempor lorem at neque tempus aliquet. Phasellus
+          at ex volutpat, varius arcu id, aliquam lectus. Vestibulum mattis
+          felis quis ex pharetra luctus. Etiam luctus sagittis massa, sed
+          iaculis est vehicula ut.
+        </p>
+      </div>
+    </div>
+<!-- pic3 latest-->
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex flex-wrap " >
+      <div class="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-6/12 lg:pr-6">
+        <div
+          class="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20"
+          data-te-ripple-init data-te-ripple-color="light">
+          <img src="{% static 'images/patterns.jpg'%}" class="w-full" alt="HomeLatest3" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+        <h3 class="mb-4 text-2xl font-bold text-neutral-800">Quality repair to care</h3>
+        <div class="mb-4 flex items-center text-sm font-medium text-yellow-600">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" class="mr-2 h-5 w-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+          </svg>
+          World Class
+        </div>
+        <p class="mb-6 text-sm text-neutral-500 dark:text-neutral-400">
+          Published <u>10.01.2022</u> by
+          <a href="#!">Joe Svan</a>
+        </p>
+        <p class="text-neutral-500 dark:text-neutral-300">
+          Sed sollicitudin purus sed nulla dignissim ullamcorper. Aenean
+          tincidunt vulputate libero, nec imperdiet sapien pulvinar id.
+          Nullam scelerisque odio vel lacus faucibus, tincidunt feugiat
+          augue ornare. Proin ac dui vel lectus eleifend vestibulum et
+          lobortis risus. Nullam in commodo sapien. Curabitur ut erat congue
+          sem finibus eleifend egestas eu metus. Sed ut dolor id magna
+          rutrum ultrices ut eget libero. Duis vel porttitor odio. Ut
+          pulvinar sed turpis ornare tincidunt. Donec luctus, mi euismod
+          dignissim malesuada, lacus lorem commodo leo, tristique blandit
+          ante mi id metus. Integer et vehicula leo, vitae interdum lectus.
+          Praesent nulla purus, commodo at euismod nec, blandit ultrices
+          erat. Aliquam eros ipsum, interdum et mattis vitae, faucibus vitae
+          justo. Nulla condimentum hendrerit leo, in feugiat ipsum
+          condimentum ac. Maecenas sed blandit dolor.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</div>
+<!-- End-latest-article-->
+
+<!-- Feedback Carousel-->
+<section data-aos="fade-up" data-aos-duration="1000" class="pb-10">
+  <div class="mb-5 mx-auto max-w-3xl text-center">
+    <h3 class="p-10 text-3xl font-bold text-neutral-800">Your Feedback With Us</h3>
+<div
+  id="carouselExampleCaptions"
+  class="relative"
+  data-te-carousel-init
+  data-te-carousel-slide >
+  <div
+    class=" relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+    <!--First Testimonial / Carousel item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-active
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <p
+        class="mx-auto max-w-4xl text-xl italic text-neutral-700 dark:text-neutral-300">
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+        error amet numquam iure provident voluptate esse quasi, voluptas
+        nostrum quisquam!"
+      </p>
+      <div class="mb-6 mt-12 flex justify-center">
+        <img
+          src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+          class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+          alt="smaple image" />
+      </div>
+      <p class="text-neutral-500 dark:text-neutral-300">- Anna Morian</p>
+    </div>
+
+    <!--Second Testimonial / Carousel item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <p
+        class="mx-auto max-w-4xl text-xl italic text-neutral-700 dark:text-neutral-300">
+        "Neque cupiditate assumenda in maiores repudiandae mollitia
+        adipisci maiores repudiandae mollitia consectetur adipisicing
+        architecto elit sed adipiscing elit."
+      </p>
+      <div class="mb-6 mt-12 flex justify-center">
+        <img
+          src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp"
+          class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+          alt="smaple image" />
+      </div>
+      <p class="text-neutral-500 dark:text-neutral-300">- Teresa May</p>
+    </div>
+
+    <!--Third Testimonial / Carousel item-->
+    <div
+      class="relative float-left -mr-[100%] hidden w-full text-center transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <p
+        class="mx-auto max-w-4xl text-xl italic text-neutral-700 dark:text-neutral-300">
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur est laborum neque
+        cupiditate assumenda in maiores."
+      </p>
+      <div class="mb-6 mt-12 flex justify-center">
+        <img
+          src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+          class="h-24 w-24 rounded-full shadow-lg dark:shadow-black/30"
+          alt="smaple image" />
+      </div>
+      <p class="text-neutral-500 dark:text-neutral-300">- Kate Allise</p>
+    </div>
+  </div>
+
+  <!--Carousel Controls - prev item-->
+  <button
+    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="prev">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#f8fafc"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+      >Previous</span
+    >
+  </button>
+  <!--Carousel Controls - next item-->
+  <button
+    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none dark:text-white dark:opacity-50 dark:hover:text-white dark:focus:text-white"
+    type="button"
+    data-te-target="#carouselExampleCaptions"
+    data-te-slide="next">
+    <span class="inline-block h-8 w-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#f8fafc"
+        class="h-6 w-6">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </span>
+    <span
+      class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+  </button>
+</div>
+</div>
+</section>
+
+{% endblock %}

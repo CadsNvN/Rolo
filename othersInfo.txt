@@ -1,0 +1,41 @@
+pip install -r requirements.txt    -   to install all the dependacy of a project
+pip freeze > requirements.txt    -   to make the list of dependancy into txt file
+pip freeze    -   to look for project dependencies
+
+Using pip:
+In a virtual environment:
+If you're using a virtual environment, activate it, and then use the following command:  pip list
+
+Without a virtual environment:
+If you're not using a virtual environment, you can still see installed packages globally with:  pip freeze
+
+(venv) c:\Mydjango\mysite>py -m django --version
+4.1.13
+
+(venv) c:\Mydjango\mysite>py -V
+Python 3.11.4
+
+
+Change your models (in models.py).
+Run python manage.py makemigrations to create migrations for those changes
+Run python manage.py migrate to apply those changes to the database.
+
+3-4 minutes video for final project
+explaning the functions said in proposal
+
+
+Github
+aguilaraxl63@gmail.com
+pass: 123aguilar187x
+name: axlNorem5h
+
+pythonanywhere
+username: axl5h
+email: aguilaraxl63@gmail.com
+pass:877fehtLXp?kq?w
+
+
+pythonanywhere
+username: cadsVnV
+email: cadayona.roneilict@gmail.com
+pass: 8Qpfyp238qN@QBG

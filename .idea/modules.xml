@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Aguilar/.idea/Aguilar.iml" filepath="$PROJECT_DIR$/../Aguilar/.idea/Aguilar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Cadayona.iml" filepath="$PROJECT_DIR$/.idea/Cadayona.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/Delapena/.idea/Delapena.iml" filepath="$PROJECT_DIR$/../Mydjango/Delapena/.idea/Delapena.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DjangoLesson/.idea/DjangoLesson.iml" filepath="$PROJECT_DIR$/../DjangoLesson/.idea/DjangoLesson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../EcoTutorial/.idea/EcoTutorial.iml" filepath="$PROJECT_DIR$/../EcoTutorial/.idea/EcoTutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/SampleApppTwo/.idea/SampleApppTwo.iml" filepath="$PROJECT_DIR$/../Mydjango/SampleApppTwo/.idea/SampleApppTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/django-scheduler-develop/.idea/django-scheduler-develop.iml" filepath="$PROJECT_DIR$/../Mydjango/django-scheduler-develop/.idea/django-scheduler-develop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/django-scheduler-sample-master/.idea/django-scheduler-sample-master.iml" filepath="$PROJECT_DIR$/../Mydjango/django-scheduler-sample-master/.idea/django-scheduler-sample-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/event-calendar/.idea/event-calendar.iml" filepath="$PROJECT_DIR$/../Mydjango/event-calendar/.idea/event-calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/event-calendar-main/.idea/event-calendar-main.iml" filepath="$PROJECT_DIR$/../Mydjango/event-calendar-main/.idea/event-calendar-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/mysite/.idea/mysite.iml" filepath="$PROJECT_DIR$/../Mydjango/mysite/.idea/mysite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/school_management_system/.idea/school_management_system.iml" filepath="$PROJECT_DIR$/../Mydjango/school_management_system/.idea/school_management_system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mydjango/school_management_system-master/.idea/school_management_system-master.iml" filepath="$PROJECT_DIR$/../Mydjango/school_management_system-master/.idea/school_management_system-master.iml" />
+    </modules>
+  </component>
+</project>
